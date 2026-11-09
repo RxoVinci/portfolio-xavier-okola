@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-bricolage);
+  --font-serif: var(--font-instrument);
+  --color-nuit: #0a1124;
+  --color-nuit-claire: #111b38;
+  --color-electrique: #2f6bff;
+  --color-menthe: #4fe3c1;
+  --color-creme: #f5f7fc;
+  --color-brume: #8a93ab;
+  --color-trait: #24304f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-nuit);
+  color: var(--color-creme);
+}
+
+::selection {
+  background: var(--color-electrique);
+  color: var(--color-creme);
+}
