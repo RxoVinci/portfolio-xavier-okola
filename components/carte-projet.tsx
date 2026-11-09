@@ -9,7 +9,7 @@ type Props = {
 
 export default function CarteProjet({ projet }: Props) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-trait bg-nuit-claire transition-colors hover:border-electrique">
+    <article className="group flex flex-col overflow-hidden rounded-md border border-trait bg-carte transition-colors hover:border-accent">
       <Link href={`/projets/${projet.slug}`} className="overflow-hidden">
         <Image
           src={projet.image}
@@ -21,16 +21,16 @@ export default function CarteProjet({ projet }: Props) {
         />
       </Link>
       <div className="flex flex-1 flex-col p-6">
-        <p className="flex justify-between text-xs uppercase tracking-widest text-brume">
+        <p className="flex justify-between text-xs uppercase tracking-widest text-gris">
           <span>{projet.categorie}</span>
           <span>{projet.annee}</span>
         </p>
         <h3 className="mt-3 text-xl font-semibold">
-          <Link href={`/projets/${projet.slug}`} className="hover:text-menthe">
+          <Link href={`/projets/${projet.slug}`} className="hover:text-vert">
             {projet.titre}
           </Link>
         </h3>
-        <p className="mt-2 flex-1 text-sm text-brume">{projet.resume}</p>
+        <p className="mt-2 flex-1 text-sm text-gris">{projet.resume}</p>
         <ul className="mt-5 flex flex-wrap gap-2">
           {projet.tags.map((tag) => (
             <li key={tag}>

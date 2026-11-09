@@ -15,24 +15,24 @@ export default function Accueil() {
     <>
       <Hero
         surtitre={`${PROFIL.ecole}, ${PROFIL.ville}`}
-        titre="Je crée des sites, des marques et des images qui donnent envie."
+        titre="Salut, moi c'est Xavier."
         texte={PROFIL.accroche}
       />
 
-      <div className="grid grid-cols-2 gap-4 pb-16 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-8 pb-16 md:grid-cols-4">
         {CHIFFRES.map((chiffre) => (
           <ChiffreCle key={chiffre[1]} chiffre={chiffre} />
         ))}
       </div>
 
-      <Section titre="Projets à la une" sousTitre="Trois projets que je mène de A à Z, du design à la mise en ligne.">
+      <Section titre="Quelques projets" sousTitre="Ceux dont je suis le plus fier en ce moment.">
         <ListeProjets projets={projetsMisEnAvant} />
         <div className="mt-10">
           <Bouton label="Voir tous les projets" href="/projets" variante="contour" />
         </div>
       </Section>
 
-      <Section titre="Ce que je sais faire" sousTitre="Du code à l'image, j'aime tenir un projet du début à la fin.">
+      <Section titre="Mes outils" sousTitre="Ce que j'utilise au quotidien, en cours comme sur mes projets.">
         <div className="grid gap-6 md:grid-cols-2">
           {COMPETENCES.map((competence) => (
             <CarteCompetence key={competence.domaine} competence={competence} />

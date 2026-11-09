@@ -21,11 +21,11 @@ export default function APropos() {
       <TitrePage surtitre="À propos" titre={`${PROFIL.prenom} ${PROFIL.nom}`} texte={PROFIL.accroche} />
 
       <div className="grid gap-10 pb-16 md:grid-cols-2">
-        <p className="text-lg leading-relaxed text-creme/85">
+        <p className="text-lg leading-relaxed text-encre/85">
           J&apos;ai commencé par créer du contenu : à 16 ans, je lançais mon propre média rap. J&apos;y ai appris à
           raconter une histoire, à construire une audience et à travailler avec des artistes.
         </p>
-        <p className="text-lg leading-relaxed text-creme/85">
+        <p className="text-lg leading-relaxed text-encre/85">
           Aujourd&apos;hui, je relie ces deux mondes : le code et la création. À l&apos;IIM, j&apos;apprends le
           développement, le design et l&apos;audiovisuel, et avec Prok Agency je mets tout ça au service de vrais
           projets.
@@ -38,7 +38,7 @@ export default function APropos() {
             <CarteCompetence key={competence.domaine} competence={competence} />
           ))}
         </div>
-        <ul className="mt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm text-brume">
+        <ul className="mt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm text-gris">
           {LANGUES.map((langue) => (
             <li key={langue}>{langue}</li>
           ))}

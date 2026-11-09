@@ -9,7 +9,7 @@ export const PROFIL: Profil = {
   ecole: "IIM Digital School",
   ville: "Paris",
   accroche:
-    "Étudiant en deuxième année à l'IIM Digital School et fondateur de Prok Agency. Je conçois des sites, des marques et des contenus, du premier croquis jusqu'à la mise en ligne.",
+    "Étudiant à l'IIM Digital School, je code des sites, je construis des marques et je monte des vidéos. J'ai commencé à 16 ans avec un média rap, aujourd'hui je lance ma propre agence, Prok Agency.",
   reseaux: [
     { label: "GitHub", href: "https://github.com/rxoduvinci" },
     { label: "Prok Agency", href: "https://www.linkedin.com/company/agencyprok" },

@@ -10,9 +10,9 @@ type Props = {
 export default function Bouton({ label, href, variante = "plein", externe = false }: Props) {
   const style =
     variante === "plein"
-      ? "bg-electrique text-creme hover:bg-creme hover:text-nuit"
-      : "border border-trait text-creme hover:border-creme"
-  const classes = `inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-colors ${style}`
+      ? "bg-encre text-fond hover:bg-accent"
+      : "border border-encre text-encre hover:bg-encre hover:text-fond"
+  const classes = `inline-flex items-center gap-2 rounded-md px-5 py-3 text-sm font-medium transition-colors ${style}`
 
   if (externe) {
     return (

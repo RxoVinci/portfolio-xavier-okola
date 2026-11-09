@@ -18,9 +18,9 @@ export default function Accordeon({ question, children }: Props) {
         className="flex w-full items-center justify-between gap-6 py-5 text-left text-lg"
       >
         {question}
-        <span className={`text-2xl text-menthe transition-transform ${ouvert ? "rotate-45" : ""}`}>+</span>
+        <span className={`text-2xl text-vert transition-transform ${ouvert ? "rotate-45" : ""}`}>+</span>
       </button>
-      {ouvert && <div className="pb-6 text-brume">{children}</div>}
+      {ouvert && <div className="pb-6 text-gris">{children}</div>}
     </div>
   )
 }

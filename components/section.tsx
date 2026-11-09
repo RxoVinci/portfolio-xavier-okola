@@ -11,7 +11,7 @@ export default function Section({ titre, sousTitre, children }: Props) {
     <section className="border-t border-trait py-16">
       <div className="mb-10 flex flex-col gap-2">
         <h2 className="font-serif text-4xl">{titre}</h2>
-        {sousTitre ? <p className="text-brume">{sousTitre}</p> : null}
+        {sousTitre ? <p className="text-gris">{sousTitre}</p> : null}
       </div>
       {children}
     </section>

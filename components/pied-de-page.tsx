@@ -12,30 +12,30 @@ export default function PiedDePage() {
           <p className="font-serif text-3xl">
             {PROFIL.prenom} {PROFIL.nom}
           </p>
-          <p className="mt-2 text-sm text-brume">
+          <p className="mt-2 text-sm text-gris">
             {PROFIL.metier}, {PROFIL.ville}.
           </p>
         </div>
-        <ul className="flex flex-col gap-2 text-sm text-brume">
+        <ul className="flex flex-col gap-2 text-sm text-gris">
           {LIENS.map((lien) => (
             <li key={lien.href}>
-              <Link href={lien.href} className="hover:text-creme">
+              <Link href={lien.href} className="hover:text-encre">
                 {lien.label}
               </Link>
             </li>
           ))}
         </ul>
-        <ul className="flex flex-col gap-2 text-sm text-brume">
+        <ul className="flex flex-col gap-2 text-sm text-gris">
           {PROFIL.reseaux.map((reseau) => (
             <li key={reseau.href}>
-              <a href={reseau.href} target="_blank" rel="noreferrer" className="hover:text-creme">
+              <a href={reseau.href} target="_blank" rel="noreferrer" className="hover:text-encre">
                 {reseau.label} ↗
               </a>
             </li>
           ))}
         </ul>
       </div>
-      <p className="mx-auto max-w-6xl px-6 pb-8 text-xs text-brume">
+      <p className="mx-auto max-w-6xl px-6 pb-8 text-xs text-gris">
         © {ANNEE} {PROFIL.prenom} {PROFIL.nom}. Site réalisé avec Next.js et TypeScript.
       </p>
     </footer>

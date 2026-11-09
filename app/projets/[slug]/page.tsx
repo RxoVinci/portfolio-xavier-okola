@@ -37,18 +37,18 @@ export default async function PageProjet({ params }: Props) {
 
   return (
     <article className="py-12">
-      <Link href="/projets" className="text-sm text-brume hover:text-creme">
+      <Link href="/projets" className="text-sm text-gris hover:text-encre">
         ← Tous les projets
       </Link>
 
       <header className="mt-8">
-        <p className="flex flex-wrap gap-x-4 gap-y-1 text-sm uppercase tracking-widest text-menthe">
+        <p className="flex flex-wrap gap-x-4 gap-y-1 text-sm uppercase tracking-widest text-vert">
           <span>{projet.categorie}</span>
           <span>{projet.annee}</span>
           <span>{projet.statut}</span>
         </p>
         <h1 className="mt-4 font-serif text-5xl md:text-7xl">{projet.titre}</h1>
-        <p className="mt-4 max-w-2xl text-lg text-brume">{projet.resume}</p>
+        <p className="mt-4 max-w-2xl text-lg text-gris">{projet.resume}</p>
       </header>
 
       <Image
@@ -58,32 +58,32 @@ export default async function PageProjet({ params }: Props) {
         height={800}
         loading="eager"
         sizes="(min-width: 1152px) 1104px, 100vw"
-        className="mt-10 aspect-[3/2] w-full rounded-2xl border border-trait object-cover"
+        className="mt-10 aspect-[3/2] w-full rounded-md border border-trait object-cover"
       />
 
       <div className="mt-12 grid gap-12 md:grid-cols-[2fr_1fr]">
         <div>
           <h2 className="font-serif text-3xl">Le projet</h2>
-          <p className="mt-4 leading-relaxed text-creme/85">{projet.description}</p>
+          <p className="mt-4 leading-relaxed text-encre/85">{projet.description}</p>
 
           <h2 className="mt-10 font-serif text-3xl">Ce que j&apos;ai fait</h2>
           <ul className="mt-4 flex flex-col gap-3">
             {projet.realisations.map((realisation) => (
-              <li key={realisation} className="flex gap-3 text-creme/85">
-                <span className="text-menthe">→</span>
+              <li key={realisation} className="flex gap-3 text-encre/85">
+                <span className="text-vert">→</span>
                 {realisation}
               </li>
             ))}
           </ul>
         </div>
 
-        <aside className="flex flex-col gap-6 rounded-2xl border border-trait bg-nuit-claire p-6 self-start">
+        <aside className="flex flex-col gap-6 rounded-md border border-trait bg-carte p-6 self-start">
           <div>
-            <p className="text-xs uppercase tracking-widest text-brume">Mon rôle</p>
+            <p className="text-xs uppercase tracking-widest text-gris">Mon rôle</p>
             <p className="mt-1">{projet.role}</p>
           </div>
           <div>
-            <p className="text-xs uppercase tracking-widest text-brume">Outils</p>
+            <p className="text-xs uppercase tracking-widest text-gris">Outils</p>
             <ul className="mt-3 flex flex-wrap gap-2">
               {projet.tags.map((tag) => (
                 <li key={tag}>
@@ -98,13 +98,13 @@ export default async function PageProjet({ params }: Props) {
 
       <Link
         href={`/projets/${suivant.slug}`}
-        className="mt-16 flex items-center justify-between rounded-2xl border border-trait p-8 transition-colors hover:border-electrique"
+        className="mt-16 flex items-center justify-between rounded-md border border-trait p-8 transition-colors hover:border-accent"
       >
         <span>
-          <span className="block text-xs uppercase tracking-widest text-brume">Projet suivant</span>
+          <span className="block text-xs uppercase tracking-widest text-gris">Projet suivant</span>
           <span className="mt-2 block font-serif text-3xl">{suivant.titre}</span>
         </span>
-        <span className="text-3xl text-menthe">→</span>
+        <span className="text-3xl text-vert">→</span>
       </Link>
     </article>
   )

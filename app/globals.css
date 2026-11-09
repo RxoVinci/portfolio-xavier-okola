@@ -3,13 +3,13 @@
 @theme inline {
   --font-sans: var(--font-bricolage);
   --font-serif: var(--font-instrument);
-  --color-nuit: #0a1124;
-  --color-nuit-claire: #111b38;
-  --color-electrique: #2f6bff;
-  --color-menthe: #4fe3c1;
-  --color-creme: #f5f7fc;
-  --color-brume: #8a93ab;
-  --color-trait: #24304f;
+  --color-fond: #f4f0e8;
+  --color-carte: #fbf9f4;
+  --color-encre: #1d1b18;
+  --color-gris: #6e675e;
+  --color-accent: #b5482a;
+  --color-vert: #3f5b3a;
+  --color-trait: #ddd5c8;
 }
 
 html {
@@ -17,11 +17,11 @@ html {
 }
 
 body {
-  background: var(--color-nuit);
-  color: var(--color-creme);
+  background: var(--color-fond);
+  color: var(--color-encre);
 }
 
 ::selection {
-  background: var(--color-electrique);
-  color: var(--color-creme);
+  background: var(--color-accent);
+  color: var(--color-carte);
 }

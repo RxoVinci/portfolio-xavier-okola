@@ -21,7 +21,7 @@ export default function MenuMobile({ liens }: Props) {
         {ouvert ? "Fermer" : "Menu"}
       </button>
       {ouvert && (
-        <ul className="absolute inset-x-0 top-full flex flex-col gap-1 border-b border-trait bg-nuit px-6 py-4">
+        <ul className="absolute inset-x-0 top-full flex flex-col gap-1 border-b border-trait bg-fond px-6 py-4">
           {liens.map((lien) => (
             <li key={lien.href}>
               <Link href={lien.href} onClick={() => setOuvert(false)} className="block py-2 text-lg">

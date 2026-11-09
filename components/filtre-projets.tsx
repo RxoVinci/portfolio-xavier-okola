@@ -31,7 +31,7 @@ export default function FiltreProjets({ projets, categories }: Props) {
               <button
                 onClick={() => setFiltre(categorie)}
                 className={`rounded-full px-4 py-2 text-sm transition-colors ${
-                  filtre === categorie ? "bg-creme text-nuit" : "border border-trait text-brume hover:text-creme"
+                  filtre === categorie ? "bg-encre text-fond" : "border border-trait text-gris hover:text-encre"
                 }`}
               >
                 {categorie}
@@ -41,12 +41,12 @@ export default function FiltreProjets({ projets, categories }: Props) {
         </ul>
         <button
           onClick={() => setTri(tri === "recent" ? "ancien" : "recent")}
-          className="self-start rounded-full border border-trait px-4 py-2 text-sm text-brume hover:text-creme"
+          className="self-start rounded-full border border-trait px-4 py-2 text-sm text-gris hover:text-encre"
         >
           {tri === "recent" ? "Du plus récent au plus ancien" : "Du plus ancien au plus récent"}
         </button>
       </div>
-      <p className="mb-6 text-sm text-brume">
+      <p className="mb-6 text-sm text-gris">
         {projetsAffiches.length} {projetsAffiches.length > 1 ? "projets" : "projet"}
       </p>
       <ListeProjets projets={projetsAffiches} />

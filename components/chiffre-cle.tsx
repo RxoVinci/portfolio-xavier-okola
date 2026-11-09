@@ -8,9 +8,9 @@ export default function ChiffreCle({ chiffre }: Props) {
   const [valeur, libelle] = chiffre
 
   return (
-    <div className="rounded-2xl border border-trait p-6">
-      <p className="font-serif text-5xl text-creme">{valeur}</p>
-      <p className="mt-2 text-sm text-brume">{libelle}</p>
+    <div className="border-l border-trait pl-5">
+      <p className="font-serif text-5xl text-accent">{valeur}</p>
+      <p className="mt-1 text-sm text-gris">{libelle}</p>
     </div>
   )
 }
