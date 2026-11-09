@@ -21,7 +21,7 @@ npm install
 npm run dev
 ```
 
-Puis ouvrir [http://localhost:3000](http://localhost:3000).
+Puis ouvrir [http://localhost:3007](http://localhost:3007).
 
 Autres commandes :
 
