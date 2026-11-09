@@ -11,7 +11,7 @@ export const PROFIL: Profil = {
   accroche:
     "Étudiant à l'IIM Digital School, je code des sites, je construis des marques et je monte des vidéos. J'ai commencé à 16 ans avec un média rap, aujourd'hui je lance ma propre agence, Prok Agency.",
   reseaux: [
-    { label: "GitHub", href: "https://github.com/rxoduvinci" },
+    { label: "GitHub", href: "https://github.com/RxoVinci" },
     { label: "Prok Agency", href: "https://www.linkedin.com/company/agencyprok" },
     { label: "Instagram", href: "https://www.instagram.com/agency_prok" },
     { label: "Linktree", href: "https://linktr.ee/prokagency" },
